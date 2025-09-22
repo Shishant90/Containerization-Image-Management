@@ -4,7 +4,7 @@ param(
 
 # Get AWS account ID and region
 $AWS_ACCOUNT_ID = (aws sts get-caller-identity --query Account --output text)
-$AWS_REGION = if ($env:AWS_REGION) { $env:AWS_REGION } else { "us-east-1" }
+$AWS_REGION = if ($env:AWS_REGION) { $env:AWS_REGION } else { "eu-north-1" }
 $REPOSITORY_NAME = "containerized-app"
 
 # ECR repository URL

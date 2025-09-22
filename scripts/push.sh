@@ -2,7 +2,7 @@
 
 # Get AWS account ID and region
 AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
-AWS_REGION=${AWS_REGION:-us-east-1}
+AWS_REGION=${AWS_REGION:-eu-north-1}
 REPOSITORY_NAME="containerized-app"
 IMAGE_TAG=${1:-latest}
 
